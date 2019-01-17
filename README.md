@@ -13,7 +13,7 @@ Ansible-Role For Installing and Configuring WordBress on LAMP Stack.
 - Using Jinja2 Templates for creating and configuring `wp-config.php`
 ## Dependencies
 
-###- NO Dependencies Needed , EveryThing Is automated . 
+### NO Dependencies Needed , EveryThing Is automated . 
 
 ## Requirements
 
