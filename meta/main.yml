@@ -2,6 +2,7 @@
 galaxy_info:
   author: Mina Maher Abdou
   description: Automated Installation and Configuring WORDPRESS on LAMP Stack Based on RHEL/Centos 7 OS_Family
+  displayName: Mina-Maher
   license: BSD
   min_ansible_version: 2.7
   platforms:
