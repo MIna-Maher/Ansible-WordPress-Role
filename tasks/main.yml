@@ -1,6 +1,6 @@
 # Master Task for installing and configuring MariaDB,Apache & WORDPRESS
 - name: Installing PHP and other pkgs
-  yum: pkg={{ item }}  state=latest
+  yum: pkg={{ item }}  state=present
   with_items:
    - php
    - php-common
