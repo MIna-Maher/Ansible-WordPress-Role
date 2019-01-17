@@ -5,7 +5,7 @@ galaxy_info:
   license: BSD
   min_ansible_version: 2.7
   platforms:
-    - name: EL
+    - name: RHEL/Centos
       versions:
         - 7
   galaxy_tags:
