@@ -1,0 +1,23 @@
+# Master Task for installing and configuring MariaDB,Apache & WORDPRESS
+- name: Installing PHP and other pkgs
+  yum: pkg={{ item }}  state=latest
+  with_items:
+   - php
+   - php-common
+   - php-mysql
+   - php-gd
+   - php-xml
+   - php-mbstring
+   - php-mcrypt
+   - php-xmlrpc
+   - unzip
+   - wget
+- name: Installing and Configuring MariaDB and MariaDB-CLient For WordBress
+  include_tasks: DataBase.yml
+  tags: database
+- name : Installing and configuring httpd server for WordBress
+  include_tasks: webserver.yml
+  tags: webserver
+- name: Dwonloading and configuring WordBress 
+  include_tasks: wordpress.yml
+  tags: wordpress

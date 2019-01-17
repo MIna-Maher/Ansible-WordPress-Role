@@ -1,0 +1,11 @@
+--- ## Ansible-Playbook for installing wordpress on LAMP Stack (MASTER-PlayBook)
+- hosts: application-client
+  user: ansible
+  sudo: yes
+  connection: ssh 
+  gather_facts: yes
+  roles: 
+   - WordPress-Role
+
+
+

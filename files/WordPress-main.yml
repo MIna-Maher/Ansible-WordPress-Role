@@ -1,0 +1,42 @@
+--- ## Ansible-Playbook for installing wordpress on LAMP Stack (MASTER-PlayBook)
+- hosts: application-client
+  user: ansible
+  sudo: yes
+  connection: ssh 
+  gather_facts: yes
+  vars:
+    dbserver_pkg: mariadb-server
+    dbcllient_pkg: mariadb
+    dbinstalldir: /var/lib/mysql/
+    dbinstancename: MyDBTest
+    dbdistribution: RedHat
+  vars_prompt:
+    - name: mysql_root_password
+      prompt: Please Enter The Password for MariaDB Root user>>
+    - name: wordpress_db
+      prompt: Please Enter the name of Wordpress DataBase>>
+    - name: wordpress_dbuser
+      prompt: Please Enter the name of WB DataBase User >>
+    - name: wordpress_dbpass
+      prompt: Please Enter the pass for WB DataBase User >>
+  tasks:
+    - name: Installing PHP and other pkgs
+      yum: pkg={{ item }}  state=latest
+      with_items:
+       - php 
+       - php-common
+       - php-mysql 
+       - php-gd
+       - php-xml 
+       - php-mbstring 
+       - php-mcrypt 
+       - php-xmlrpc 
+       - unzip
+       - wget 
+    - include: DataBase/DataBase-Server.yml
+    - include: WebServer/webserver.yml
+    - include: wordpress/wordpress.yml
+
+
+
+
