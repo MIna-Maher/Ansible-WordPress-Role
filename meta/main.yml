@@ -11,5 +11,4 @@ galaxy_info:
   galaxy_tags:
     - web
     - database
-  dependencies:
-    - NO Dependancies Needed,EveryThing is automated
+  dependencies: []
