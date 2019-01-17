@@ -13,9 +13,12 @@ Ansible-Role For Installing and Configuring WordBress on LAMP Stack.
 - Using Jinja2 Templates for creating and configuring `wp-config.php`
 ## Dependencies
 
--### NO Dependencies Needed , EveryThing Is automated . 
+#### NO Dependencies Needed , EveryThing Is automated . 
 
 ## Requirements
+- RHEL/Centos7 with installed YUM Package Manager,Firewalld and SSH on it.
 
-
-## Role Variables
+## Installing from Ansible-Galaxy on the current Directory
+ ```sh
+ ansible-galaxy install mina_maher.ansible_wordpress_role -p .
+```
