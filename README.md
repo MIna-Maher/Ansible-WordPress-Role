@@ -22,3 +22,17 @@ Ansible-Role For Installing and Configuring WordBress on LAMP Stack.
  ```sh
  ansible-galaxy install mina_maher.ansible_wordpress_role -p .
 ```
+## Changing The Default Database Vraiables
+#### I've already set the Role Vars to default values,If you want to change them
+#### edit in `vars/main.yml`
+```yml
+##Password for MariaDB Root user
+mysql_root_password: "123456789"
+## WordPress-DatBase Name:
+wordpress_db: "wordpress"
+##Wordpress DataBase UserName:
+wordpress_dbuser: "wordpress"
+## WordPress DataBase Password
+wordpress_dbpass: "123456789"
+```
+
