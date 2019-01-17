@@ -2,6 +2,8 @@
 galaxy_info:
   role_name: Ansible-WordPress-Role
   author: Mina Maher Abdou
+  version: 1.0
+  name: Ansible-WordPress-Role
   description: Automated Installation and Configuring WORDPRESS on LAMP Stack Based on RHEL/Centos 7 OS_Family
   displayName: Mina-Maher
   license: BSD
