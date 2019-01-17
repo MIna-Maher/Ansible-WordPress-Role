@@ -1,5 +1,15 @@
 - name: Install apache web server
   yum: pkg=httpd state=latest
+  tags: webserver
 - name: Start and Enable httpd
   service: name=httpd state=restarted enabled=yes
-
+  tags: webserver
+- name: Enable http service on the remote host
+  firewalld:
+    service: http
+    permanent: true
+    state: enabled
+  tags: webserver
+- name: Reload firewalld service after Enabling http service
+  command: firewall-cmd --reload
+  tags: webserver
