@@ -35,4 +35,5 @@ wordpress_dbuser: "wordpress"
 ## WordPress DataBase Password
 wordpress_dbpass: "123456789"
 ```
-
+## License
+- BSD 3-Clause License
