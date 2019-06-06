@@ -4,7 +4,7 @@
 
 ### Ansible role for :
 
-- installing PHP Dependences and some other packages Needed for the installation
+- installing PHP version 7.3 Dependences  and some other packages Needed for installation Latest Wordpress version
 - Installing and configuring MariaDB and MariaDB-client
 - Creating wordpress DataBase and DBUser for WordPress
 - Removing the Annonymous user and Test DataBase to secure the Database Server
