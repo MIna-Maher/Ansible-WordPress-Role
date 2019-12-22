@@ -37,3 +37,8 @@ wordpress_dbpass: "123456789"
 ```
 ## License
 - BSD 3-Clause License
+## How to Contribute
+- Take your own Fork.
+- Do Your Edits.
+- Test your Edits.
+- Raise Your PR.
