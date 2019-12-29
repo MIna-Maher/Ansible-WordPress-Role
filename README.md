@@ -16,12 +16,18 @@
 #### NO Dependencies Needed , EveryThing Is automated . 
 
 ## Requirements
-- RHEL/Centos7 with installed YUM Package Manager,Firewalld and SSH on it.
+- RHEL/Centos7 with installed YUM Package Manager,Firewalld and SSHd on it.
 
 ## Installing from Ansible-Galaxy on the current Directory
  ```sh
  ansible-galaxy install mina_maher.ansible_wordpress_role -p .
 ```
+## Accessing your webiste:
+- open the URL of  Targeted Centos Machine which you installed the wordpress on.
+```sh
+http://<IP-of-Target-Cntos-Machine>
+```
+ 
 ## Changing The Default Database Vraiables
 #### I've already set the Role Vars to default values,If you want to change them
 #### edit in `vars/main.yml`
