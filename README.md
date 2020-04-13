@@ -40,6 +40,8 @@ wordpress_db: "wordpress"
 wordpress_dbuser: "wordpress"
 ## WordPress DataBase Password
 wordpress_dbpass: "123456789"
+## WordPress Database hostname
+host: "localhost"
 ```
 ## License
 - BSD 3-Clause License
