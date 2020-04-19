@@ -7,7 +7,7 @@
    - https://rpms.remirepo.net/fedora/remi-release-31.rpm
   tags: php
 - name: enabling the PHP 7.3 Remi repository
-  command: yum-config-manager --enable remi-php73 -y
+  command: dnf config-manager --set-enabled remi-php73 -y
   tags: php
 - name: Installing PHP and other pkgs
   yum: pkg={{ item }}  state=present
