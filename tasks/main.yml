@@ -1,9 +1,9 @@
 # Master Task for installing and configuring MariaDB,Apache & WORDPRESS
 - name: Installing epel-release and yum-utils to download updated version of PHP
-  yum: pkg={{ item }} state=present
+  dnf: pkg={{ item }} state=present
   with_items:
    - epel-release
-   - yum-utils
+   - dnf-plugins-core
    - https://rpms.remirepo.net/fedora/remi-release-31.rpm
   tags: php
 - name: enabling the PHP 7.3 Remi repository
