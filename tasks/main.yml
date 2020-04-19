@@ -4,7 +4,7 @@
   with_items:
    - epel-release
    - yum-utils
-   - http://rpms.remirepo.net/enterprise/remi-release-8.rpm
+   - https://rpms.remirepo.net/fedora/remi-release-31.rpm
   tags: php
 - name: enabling the PHP 7.3 Remi repository
   command: yum-config-manager --enable remi-php73 -y
